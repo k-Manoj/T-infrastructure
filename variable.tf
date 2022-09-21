@@ -17,6 +17,14 @@ variable "azs" { default = "us-east-1a" }
 variable "environment" { default = "dev" }
 variable "instance_type" { default = "t2.medium" }
 variable "instance_type1" {default= "t2.xlarge"}
+variable "block_size"{
+  "root_block_device {
+     volume_size = "30"
+     volume_type =  gp2
+     encrypted = true
+     delete_on_termination =true
+     }"
+  }
 
 # test = "t2.micro"
 #prod = "t2.medium"
