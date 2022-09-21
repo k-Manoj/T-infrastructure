@@ -8,7 +8,7 @@ resource "aws_instance" "instance_type" {
   #user_data                   = file("docker.sh")
   user_data                   = "${file("jenkins.sh")}"
   key_name                    = var.key_name
-  block_size                  = var.block_size
+#  block_size                  = var.block_size
   tags = {
     Name = "jenkins-master"
   }
