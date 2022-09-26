@@ -11,7 +11,7 @@ resource "aws_route_table" "terraform-public" {
   }
 }
 
-resource "aws_route_table_association" "terraform-public-1" {
-  subnet_id      = aws_subnet.subnet1-public.id
-  route_table_id = aws_route_table.terraform-public.id
+resource "aws_route_table_association" "terraform-private-1" {
+  subnet_id      = aws_subnet.subnet1-private.id
+  route_table_id = aws_route_table.terraform-private-1.id
 }
