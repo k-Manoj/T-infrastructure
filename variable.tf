@@ -23,3 +23,4 @@ variable "instance_type1" {default= "t2.xlarge"}
 #prod = "t2.medium"
 
 variable "sg_name" {}
+variable "nacl_name" {}
