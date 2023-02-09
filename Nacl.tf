@@ -1,5 +1,5 @@
 resource "aws_network_acl" "main" {
-  vpc_id = aws_vpc.main.id
+  vpc_id = aws_vpc.default.id
 
   egress {
     protocol   = "tcp"
