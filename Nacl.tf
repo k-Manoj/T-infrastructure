@@ -7,6 +7,7 @@ resource "aws_network_acl" "main" {
     action     = "allow"
     from_port  = 443
     to_port    = 443
+    cidr_block = var.vpc_cidr
   }
 
   ingress {
@@ -15,5 +16,6 @@ resource "aws_network_acl" "main" {
     action     = "allow"
     from_port  = 80
     to_port    = 80
+    cidr_block = var.vpc_cidr
   }
 }
