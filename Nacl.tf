@@ -16,3 +16,4 @@ resource "aws_network_acl" "main" {
     from_port  = 80
     to_port    = 80
   }
+}
