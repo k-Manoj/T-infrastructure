@@ -41,7 +41,7 @@ resource "aws_instance" "instance_type1" {
      delete_on_termination =true
    }
   tags = {
-    Name = "stagging"
+    Name = "jenkins-slave"
   }
 }
 
