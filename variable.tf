@@ -17,8 +17,9 @@ variable "azs" { default = "us-east-1a" }
 variable "environment" { default = "dev" }
 variable "instance_type" { default = "t2.medium" }
 variable "instance_type1" {default= "t2.xlarge"}
-variable "region" {default= "us-east-1"}
-
+variable "aws_region" {default= "us-east-1"}
+variable "AWS_ACCESS_KEY_ID" {}
+variable "AWS_SECRET_ACCESS_KEY" {}
 # test = "t2.micro"
 #prod = "t2.medium"
 
