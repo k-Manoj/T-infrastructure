@@ -18,8 +18,8 @@ variable "environment" { default = "dev" }
 variable "instance_type" { default = "t2.medium" }
 variable "instance_type1" {default= "t2.xlarge"}
 variable "aws_region" {default= "us-east-1"}
-variable "AWS_ACCESS_KEY_ID" {default= "AKIAS3MH5KRHOWYU26XM"}
-variable "AWS_SECRET_ACCESS_KEY" {default= "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"}
+variable "AWS_ACCESS_KEY_ID" {}
+variable "AWS_SECRET_ACCESS_KEY" {}
 # test = "t2.micro"
 #prod = "t2.medium"
 
