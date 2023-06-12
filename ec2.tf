@@ -21,7 +21,7 @@ resource "aws_instance" "instance_type" {
 
 resource "aws_eip" "lb" {
   instance = aws_instance.instance_type.id
-  vpc      = true
+#  vpc      = true
 }
 
 resource "aws_instance" "instance_type1" {
